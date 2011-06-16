@@ -1,18 +1,18 @@
 [Desktop Entry]
 Comment=Facebook.com Service
 Encoding=UTF-8
-Icon=/home/pankaj/choqok_facebook/microblogs/facebook/icons/hi32-facebookresource.png
+Icon=/home/pankaj/choqok/microblogs/facebook/icons/hi32-facebookresource.png
 Name=Facebook
 ServiceTypes=Choqok/Plugin
 Type=Service
 X-Choqok-Version=1
 X-KDE-Library=choqok_facebook
-X-KDE-PluginInfo-Author=Pankaj Bhambhani
+X-KDE-PluginInfo-Author=Your Name
 X-KDE-PluginInfo-Category=Plugins
 X-KDE-PluginInfo-Depends=
-X-KDE-PluginInfo-Email=pankajb64@gmail.com
+X-KDE-PluginInfo-Email=your@mail.com
 X-KDE-PluginInfo-EnabledByDefault=false
 X-KDE-PluginInfo-License=GPL
 X-KDE-PluginInfo-Name=choqok_myplugin
 X-KDE-PluginInfo-Version=0.1
-X-KDE-PluginInfo-Website=http://pankajb64.co.nr
+X-KDE-PluginInfo-Website=http://yoursite.com

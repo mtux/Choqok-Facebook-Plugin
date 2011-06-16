@@ -35,9 +35,12 @@ public:
     FacebookAccount(FacebookMicroblog* parent, const QString& alias);
     virtual ~FacebookAccount();
 
+    void setAccessToken(const QString& accessToken);
+    QString accessToken() const ;
 private:
     class Private;
     Private * const d;
+    QString mAccessToken;
 };
 
 #endif // OCSACCOUNT_H

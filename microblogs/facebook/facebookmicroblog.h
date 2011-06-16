@@ -36,19 +36,21 @@ class FacebookMicroblog : public Choqok::Microblog
     virtual ~FacebookMicroblog();
     
     
+    virtual ChoqokEditAccountWidget* createEditAccountWidget(Choqok::Account* account, QWidget* parent);
     virtual void createPost(Choqok::Account* theAccount, Choqok::Post* post);
     virtual void abortCreatePost(Choqok::Account* theAccount, Choqok::Post* post = 0);
     virtual void fetchPost(Choqok::Account* theAccount, Choqok::Post* post);
     virtual void removePost(Choqok::Account* theAccount, Choqok::Post* post);
+    virtual void saveTimeline(Choqok::Account* account, const QString& timelineName, const QList< Choqok::UI::PostWidget* >& timeline);
+    virtual QList< Choqok::Post* > loadTimeline(Choqok::Account* account, const QString& timelineName);
     virtual Choqok::Account* createNewAccount(const QString& alias);
+    virtual void updateTimelines(Choqok::Account* theAccount);
+    virtual Choqok::TimelineInfo* timelineInfo(const QString& timelineName);
 
-
+    virtual QString profileUrl(Choqok::Account* account, const QString& username) const;
     
-    void setAccessToken(const QString& accessToken);
-    QString accessToken() const ;
-    
+        
   private:
-    QString mAccessToken;
-    QMap<FacebookJob, FavebookAccount*> mJobsAccount;
-    //QMap<Attica::BaseJob*, Choqok::Post*> mJobsPost;
+     QMap<FacebookJob, FavebookAccount*> mJobsAccount;
+    
 };   

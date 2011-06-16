@@ -35,3 +35,13 @@ FacebookAccount::FacebookAccount(FacebookMicroblog* parent, const QString& alias
 {
     kDebug()<<alias;
 }    
+
+void FacebookAccount::setAccessToken (const QString& acessToken)
+{
+  mAcessToken = acessToken;
+}
+
+QString FacebookAccount::accessToken() const
+{
+  return mAccessToken;
+}
